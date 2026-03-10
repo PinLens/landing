@@ -19,7 +19,7 @@ import MobileNavbar from "./mobile-navbar";
 import AnimationContainer from "../global/animation-container";
 import LanguageSwitcher from "@/components/language-switcher";
 import { useI18n } from "@/lib/i18n";
-import { NAV_LINKS } from "@/utils";
+import { APP_NAME, NAV_LINKS } from "@/utils";
 
 const Navbar = () => {
     const [scroll, setScroll] = useState(false);
@@ -52,7 +52,7 @@ const Navbar = () => {
                     <div className="flex items-center space-x-12">
                         <Link href="/#home">
                             <span className="text-lg font-bold font-heading !leading-none">
-                                PinLens
+                                {APP_NAME}
                             </span>
                         </Link>
 
@@ -80,7 +80,7 @@ const Navbar = () => {
                                                                             {link.title === "功能" ? "所有功能" : "All Features"}
                                                                         </h6>
                                                                         <p className="text-sm leading-tight text-muted-foreground">
-                                                                            {link.title === "功能" ? "管理链接、追踪性能等" : "Manage links, track performance, and more."}
+                                                                            {link.title === "功能" ? "屏幕预览、缩放测量、设计工具等" : "Screen preview, zoom measurement, design tools, and more."}
                                                                         </p>
                                                                     </Link>
                                                                 </NavigationMenuLink>
