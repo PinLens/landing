@@ -8,7 +8,7 @@ export const generateMetadata = ({
         {
             rel: "apple-touch-icon",
             sizes: "32x32",
-            url: "/apple-touch-icon.png"
+            url: "/favicon-32x32.png"
         },
         {
             rel: "icon",

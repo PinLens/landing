@@ -1,6 +1,5 @@
 "use client";
 
-import { buttonVariants } from "@/components/ui/button";
 import {
     NavigationMenu,
     NavigationMenuContent,
@@ -11,8 +10,9 @@ import {
     navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/utils";
-import { LucideIcon, ZapIcon } from "lucide-react";
+import { LucideIcon } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import React, { useEffect, useState } from 'react';
 import MaxWidthWrapper from "../global/max-width-wrapper";
 import MobileNavbar from "./mobile-navbar";
@@ -50,7 +50,14 @@ const Navbar = () => {
             <AnimationContainer reverse delay={0.1} className="size-full">
                 <MaxWidthWrapper className="flex items-center justify-between">
                     <div className="flex items-center space-x-12">
-                        <Link href="/#home">
+                        <Link href="/#home" className="flex items-center gap-2">
+                            <Image
+                                src="/icons/logo.png"
+                                alt="Logo"
+                                width={20}
+                                height={20}
+                                className="w-5 h-5"
+                            />
                             <span className="text-lg font-bold font-heading !leading-none">
                                 {APP_NAME}
                             </span>
