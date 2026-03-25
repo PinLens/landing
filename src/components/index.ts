@@ -12,9 +12,6 @@ import Providers from "./providers/providers";
 // pricing
 import PricingCards from "./pricing-cards";
 
-// blog
-import Blogs from "./blog/blogs";
-
 
 export {
     Icons,
@@ -24,5 +21,4 @@ export {
     Footer,
     Providers,
     PricingCards,
-    Blogs,
 };
