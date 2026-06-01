@@ -45,7 +45,7 @@ export const CARDS = (t: (key: string) => string) => [
         Icon: ZoomInIcon,
         name: t('features.zoom.name'),
         description: t('features.zoom.description'),
-        href: "#",
+        href: "/features/zoom",
         cta: t('common.learnMore'),
         className: "col-span-3 lg:col-span-2",
         background: (
