@@ -1,5 +1,6 @@
 import { HelpCircleIcon, RulerIcon, Maximize2Icon, ZoomInIcon, Grid3X3Icon, PinIcon } from "lucide-react";
 import type { Locale } from "@/lib/i18n";
+import { DOWNLOAD_URL } from "./site";
 
 export const NAV_LINKS = (locale: Locale) => [
     {
@@ -34,7 +35,7 @@ export const NAV_LINKS = (locale: Locale) => [
     },
     {
         title: locale === 'zh' ? "下载" : "Download",
-        href: "#",
+        href: DOWNLOAD_URL,
     },
     {
         title: locale === 'zh' ? "更新日志" : "Changelog",

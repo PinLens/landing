@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { LampContainer } from "@/components/ui/lamp";
 import MagicBadge from "@/components/ui/magic-badge";
 import MagicCard from "@/components/ui/magic-card";
-import { PROCESS } from "@/utils";
+import { DOWNLOAD_URL, PROCESS } from "@/utils";
 import { ArrowRightIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -44,7 +44,7 @@ const HomePage = () => {
                         </p>
                         <div className="flex items-center justify-center whitespace-nowrap gap-4 z-50">
                             <Button asChild>
-                                <Link href="#" className="flex items-center">
+                                <Link href={DOWNLOAD_URL} className="flex items-center">
                                     {t('hero.downloadNow')}
                                     <ArrowRightIcon className="w-4 h-4 ml-2" />
                                 </Link>
@@ -181,9 +181,11 @@ const HomePage = () => {
                                 {t('cta.description')}
                             </p>
                             <div className="mt-6">
-                                <Button>
-                                    {t('cta.download')}
-                                    <ArrowRightIcon className="w-4 h-4 ml-2" />
+                                <Button asChild>
+                                    <Link href={DOWNLOAD_URL} className="flex items-center">
+                                        {t('cta.download')}
+                                        <ArrowRightIcon className="w-4 h-4 ml-2" />
+                                    </Link>
                                 </Button>
                             </div>
                         </div>
