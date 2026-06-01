@@ -61,7 +61,7 @@ const HomePage = () => {
                                 delay={9}
                             />
                             <Image
-                                src="/assets/preview.png"
+                                src="/assets/preview.jpg"
                                 alt="App Preview"
                                 width={1200}
                                 height={1200}

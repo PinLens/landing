@@ -21,8 +21,8 @@
     "zoomDesc": "0.5x-10x 无级缩放",
     "designTools": "设计工具",
     "designToolsDesc": "标尺、辅助线、网格",
-    "quickActions": "快捷操作",
-    "quickActionsDesc": "快捷键启动，高效操作"
+    "quickActions": "快捷点击",
+    "quickActionsDesc": "开启后直接点击画板，所点即生效"
   },
   "footer": {
     "product": "产品",
@@ -81,10 +81,10 @@
       "color": "🎨 颜色"
     },
     "quickActions": {
-      "name": "便捷操作",
-      "description": "轻量级菜单栏应用，快捷键快速启动，ESC 键快速关闭选择覆盖层。",
-      "cardTitle": "快捷操作",
-      "cardDescription": "高效的工作流程"
+      "name": "快捷点击",
+      "description": "开启后可直接在画板中点击，所点即生效，减少来回切换和确认步骤。",
+      "cardTitle": "快捷点击",
+      "cardDescription": "直接点击画板，所点即生效"
     }
   },
   "process": {

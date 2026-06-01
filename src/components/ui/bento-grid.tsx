@@ -2,7 +2,7 @@
 
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/utils";
-import { ArrowRightIcon, Maximize2Icon, RulerIcon, Grid3X3Icon, PinIcon, ZoomInIcon } from "lucide-react";
+import { ArrowRightIcon, Maximize2Icon, RulerIcon, MousePointerClickIcon, ZoomInIcon } from "lucide-react";
 import Link from "next/link";
 import { ReactNode } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./card";
@@ -97,11 +97,11 @@ export const CARDS = (t: (key: string) => string) => [
         ),
     },
     {
-        Icon: PinIcon,
+        Icon: MousePointerClickIcon,
         name: t('features.quickActions.name'),
         description: t('features.quickActions.description'),
         className: "col-span-3 lg:col-span-1",
-        href: "#",
+        href: "/features/quick-actions",
         cta: t('common.learnMore'),
         background: (
             <Card className="absolute right-0 top-10 origin-top rounded-md border border-border transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:scale-105">
@@ -115,8 +115,10 @@ export const CARDS = (t: (key: string) => string) => [
                 </CardHeader>
                 <CardContent className="-mt-4">
                     <div className="space-y-2">
-                        <div className="px-3 py-1 bg-muted rounded text-sm">Cmd+Ctrl+P</div>
-                        <div className="px-3 py-1 bg-muted rounded text-sm">ESC 关闭</div>
+                        <div className="px-3 py-1 bg-muted rounded text-sm">
+                            {t('features.quickActions.cardDescription')}
+                        </div>
+                        <div className="px-3 py-1 bg-primary/10 rounded text-sm">Click - Apply</div>
                     </div>
                 </CardContent>
             </Card>

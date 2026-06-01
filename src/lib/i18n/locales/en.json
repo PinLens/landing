@@ -21,8 +21,8 @@
     "zoomDesc": "0.5x-10x stepless zoom",
     "designTools": "Design Tools",
     "designToolsDesc": "Rulers, guides, grids",
-    "quickActions": "Quick Actions",
-    "quickActionsDesc": "Keyboard shortcuts, efficient operation"
+    "quickActions": "Quick Click",
+    "quickActionsDesc": "Click directly on the canvas and apply instantly"
   },
   "footer": {
     "product": "Product",
@@ -81,10 +81,10 @@
       "color": "🎨 Color"
     },
     "quickActions": {
-      "name": "Convenient Operations",
-      "description": "Lightweight menu bar application, quick launch with shortcuts, ESC key to quickly close selection overlay.",
-      "cardTitle": "Quick Actions",
-      "cardDescription": "Efficient workflow"
+      "name": "Quick Click",
+      "description": "Enable it to click directly on the canvas, with each click taking effect immediately and fewer confirmation steps.",
+      "cardTitle": "Quick Click",
+      "cardDescription": "Click the canvas and apply instantly"
     }
   },
   "process": {

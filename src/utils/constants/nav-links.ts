@@ -1,4 +1,4 @@
-import { HelpCircleIcon, RulerIcon, Maximize2Icon, ZoomInIcon, Grid3X3Icon, PinIcon } from "lucide-react";
+import { RulerIcon, Maximize2Icon, ZoomInIcon, MousePointerClickIcon } from "lucide-react";
 import type { Locale } from "@/lib/i18n";
 import { DOWNLOAD_URL } from "./site";
 
@@ -26,10 +26,10 @@ export const NAV_LINKS = (locale: Locale) => [
                 icon: RulerIcon,
             },
             {
-                title: locale === 'zh' ? "快捷操作" : "Quick Actions",
-                tagline: locale === 'zh' ? "轻量级菜单栏应用，快捷键快速启动，ESC 键快速关闭。" : "Lightweight menu bar app, quick launch with shortcuts, ESC to close.",
+                title: locale === 'zh' ? "快捷点击" : "Quick Click",
+                tagline: locale === 'zh' ? "开启后可直接在画板中点击，所点即生效。" : "Click directly on the canvas after enabling it, and each click takes effect immediately.",
                 href: "/features/quick-actions",
-                icon: PinIcon,
+                icon: MousePointerClickIcon,
             },
         ],
     },
