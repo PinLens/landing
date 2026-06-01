@@ -1,19 +1,41 @@
-import AnimationContainer from "@/components/global/animation-container";
-import React from 'react'
+import ChangelogContent, { type GitHubRelease } from "./changelog-content";
 
-const ChangeLogPage = () => {
-    return (
-        <div className="flex flex-col items-center justify-center py-20">
-            <AnimationContainer delay={0.1}>
-                <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold font-heading text-center mt-6 !leading-tight">
-                    Change Log
-                </h1>
-                <p className="text-base md:text-lg mt-6 text-center text-muted-foreground">
-                    Stay up to date with the latest changes to our platform.
-                </p>
-            </AnimationContainer>
-        </div>
-    )
+const RELEASES_API_URL = "https://api.github.com/repos/PinLens/PinLens/releases";
+
+const getReleases = async (): Promise<GitHubRelease[]> => {
+    try {
+        const response = await fetch(RELEASES_API_URL, {
+            headers: {
+                Accept: "application/vnd.github+json",
+                "X-GitHub-Api-Version": "2022-11-28",
+            },
+            next: {
+                revalidate: 60 * 60,
+            },
+        });
+
+        if (!response.ok) {
+            return [];
+        }
+
+        const releases = await response.json();
+
+        if (!Array.isArray(releases)) {
+            return [];
+        }
+
+        return releases
+            .filter((release: GitHubRelease) => !release.draft)
+            .slice(0, 10);
+    } catch {
+        return [];
+    }
 };
 
-export default ChangeLogPage
+const ChangeLogPage = async () => {
+    const releases = await getReleases();
+
+    return <ChangelogContent releases={releases} />;
+};
+
+export default ChangeLogPage;

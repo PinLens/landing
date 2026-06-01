@@ -1,7 +1,7 @@
 'use client';
 
 import { useI18n } from '@/lib/i18n';
-import { locales, localeNames, type Locale } from '@/lib/i18n/config';
+import { locales, localeNames } from '@/lib/i18n/config';
 import { Check, Globe } from 'lucide-react';
 import {
   DropdownMenu,
@@ -10,17 +10,17 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { Button } from '@/components/ui/button';
-import { cn } from '@/utils';
 
 const LanguageSwitcher = () => {
-  const { locale, setLocale, t } = useI18n();
+  const { locale, setLocale } = useI18n();
+  const nextLocale = locale === 'zh' ? 'en' : 'zh';
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" size="sm" className="gap-2">
           <Globe className="h-4 w-4" />
-          <span className="hidden md:inline">{localeNames[locale]}</span>
+          <span className="hidden md:inline">{localeNames[nextLocale]}</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
