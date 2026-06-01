@@ -15,7 +15,7 @@ export const CARDS = (t: (key: string) => string) => [
         Icon: Maximize2Icon,
         name: t('features.areaSelection.name'),
         description: t('features.areaSelection.description'),
-        href: "#",
+        href: "/features/area-selection",
         cta: t('common.learnMore'),
         className: "col-span-3 lg:col-span-1",
         background: (
