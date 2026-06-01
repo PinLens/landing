@@ -73,7 +73,7 @@ export const CARDS = (t: (key: string) => string) => [
         Icon: RulerIcon,
         name: t('features.designTools.name'),
         description: t('features.designTools.description'),
-        href: "#",
+        href: "/features/design-tools",
         cta: t('common.learnMore'),
         className: "col-span-3 lg:col-span-2 max-w-full overflow-hidden",
         background: (
