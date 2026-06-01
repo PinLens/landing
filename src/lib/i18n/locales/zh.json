@@ -46,17 +46,17 @@
     "chinese": "中文"
   },
   "hero": {
-    "badge": "✨ MacOS 屏幕实时预览及缩放工具",
-    "title": "屏幕实时预览与",
-    "titleHighlight": "测量缩放",
-    "description": "Pinlens 是一款专为 MacOS 打造的专业级实时预览工具。",
-    "descriptionExtended": "内置多级缩放、标尺、网格系统、辅助线等专业辅助工具，助力高效工作。",
+    "badge": "✨ macOS 屏幕预览与测量工具",
+    "title": "把屏幕细节",
+    "titleHighlight": "看得更清楚",
+    "description": "PinLens 是一款为 macOS 打造的实时屏幕预览工具。",
+    "descriptionExtended": "框选任意区域，放大观察细节，配合标尺、辅助线和网格完成精确检查。",
     "downloadNow": "立即下载"
   },
   "features": {
     "badge": "核心功能",
-    "title": "专业的屏幕实时预览",
-    "description": "Pinlens 提供强大的屏幕实时预览及缩放测量功能，是 UI 设计、开发调试、内容创作的得力助手。",
+    "title": "从预览到测量，一站完成",
+    "description": "PinLens 将区域捕获、缩放观察、设计辅助和快捷点击整合到一个轻量窗口，让 UI 设计、开发调试和内容创作更顺手。",
     "areaSelection": {
       "name": "区域选择与实时预览",
       "description": "灵活拖拽选择任意屏幕区域，支持 8 方向调整大小和移动，实时显示选定区域内容。",
@@ -89,37 +89,37 @@
   },
   "process": {
     "badge": "使用流程",
-    "title": "简单 3 步开始使用",
-    "description": "按照这些简单步骤，轻松开始使用 Pinlens 进行实时预览及测量缩放。",
+    "title": "三步进入高效检查",
+    "description": "无需复杂配置，选择区域后即可开始实时预览、放大、测量和点击。",
     "step1": {
       "title": "启动应用",
-      "description": "应用启动后会在菜单栏显示图标，点击或按 Cmd+Ctrl+P 快速启动。"
+      "description": "从菜单栏打开 PinLens，快速进入区域选择模式。"
     },
     "step2": {
       "title": "选择区域",
-      "description": "拖拽创建选区，使用边角和边中间的控制点调整大小，点击确认。"
+      "description": "拖拽框选需要观察的屏幕区域，并用控制点微调范围。"
     },
     "step3": {
-      "title": "查看内容",
-      "description": "应用会创建一个新窗口显示选定区域的实时内容，可使用标尺、网格等工具。"
+      "title": "检查细节",
+      "description": "在独立预览窗口中缩放、测量、对齐，必要时直接在画板中点击。"
     }
   },
   "system": {
     "badge": "系统要求",
-    "title": "为 MacOS 设计",
-    "description": "Pinlens 专为 MacOS Sonoma (15.0+) 设计，需要屏幕录制权限以提供最佳体验。",
+    "title": "专为 macOS 打造",
+    "description": "PinLens 适配 macOS 15.0 及以上版本。首次使用时授予屏幕录制权限，即可开始实时预览。",
     "version": {
-      "title": "MacOS 15.0+",
-      "description": "需要 Sonoma 或更高版本"
+      "title": "macOS 15.0+",
+      "description": "支持 Sonoma 及更高版本"
     },
     "permission": {
       "title": "屏幕录制权限",
-      "description": "首次启动时需要授予权限"
+      "description": "用于捕获并实时显示选定区域"
     }
   },
   "cta": {
-    "title": "开始使用 Pinlens",
-    "description": "体验这款专为 MacOS 设计的屏幕实时预览及缩放测量工具，让 UI 设计、开发调试、内容创作变得更加高效。",
+    "title": "让每一次细节检查更快一点",
+    "description": "下载 PinLens，用一个轻量窗口完成预览、缩放、测量和快捷点击。",
     "download": "立即下载"
   }
 }

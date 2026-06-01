@@ -46,17 +46,17 @@
     "chinese": "中文"
   },
   "hero": {
-    "badge": "✨ macOS Screen Real-time Preview & Measurement Tool",
-    "title": "Screen Real-time Preview &",
-    "titleHighlight": "Measurement Zoom",
-    "description": "Pinlens is a professional-grade real-time preview tool built for macOS.",
-    "descriptionExtended": "Built-in multi-level zoom, rulers, grid system, guides and other professional auxiliary tools to boost productivity.",
+    "badge": "✨ macOS screen preview and measurement",
+    "title": "See screen details",
+    "titleHighlight": "with precision",
+    "description": "PinLens is a real-time screen preview tool built for macOS.",
+    "descriptionExtended": "Select any region, zoom into details, and inspect alignment with rulers, guides, and grids.",
     "downloadNow": "Download Now"
   },
   "features": {
     "badge": "Core Features",
-    "title": "Professional Screen Real-time Preview",
-    "description": "Pinlens provides powerful screen real-time preview and zoom measurement capabilities, making it an ideal assistant for UI design, development debugging, and content creation.",
+    "title": "Preview, zoom, and measure in one place",
+    "description": "PinLens brings region capture, zoom inspection, design aids, and quick click into one lightweight window for UI design, debugging, and content creation.",
     "areaSelection": {
       "name": "Area Selection & Real-time Preview",
       "description": "Flexibly drag to select any screen area, supports 8-direction resizing and moving, real-time display of selected area content.",
@@ -89,37 +89,37 @@
   },
   "process": {
     "badge": "Workflow",
-    "title": "Get Started in 3 Simple Steps",
-    "description": "Follow these simple steps to easily start using Pinlens for real-time preview and measurement zoom.",
+    "title": "Start inspecting in three steps",
+    "description": "No complex setup. Select a region and start previewing, zooming, measuring, and clicking.",
     "step1": {
       "title": "Launch App",
-      "description": "After launching, the app will display an icon in the menu bar, click or press Cmd+Ctrl+P to launch quickly."
+      "description": "Open PinLens from the menu bar and enter region selection mode."
     },
     "step2": {
       "title": "Select Area",
-      "description": "Drag to create a selection area, use the control points at corners and edges to adjust size, click to confirm."
+      "description": "Drag over the screen area you want to inspect, then refine the selection with handles."
     },
     "step3": {
-      "title": "View Content",
-      "description": "The app will create a new window to display the real-time content of the selected area, with tools like rulers and grids available."
+      "title": "Inspect Details",
+      "description": "Zoom, measure, align, and click directly in the dedicated preview window."
     }
   },
   "system": {
     "badge": "System Requirements",
     "title": "Designed for macOS",
-    "description": "Pinlens is designed specifically for macOS Sonoma (15.0+), requires screen recording permission for the best experience.",
+    "description": "PinLens supports macOS 15.0 and later. Grant screen recording permission on first use to enable real-time preview.",
     "version": {
       "title": "macOS 15.0+",
       "description": "Requires Sonoma or higher"
     },
     "permission": {
       "title": "Screen Recording Permission",
-      "description": "Permission required on first launch"
+      "description": "Used to capture and preview the selected region"
     }
   },
   "cta": {
-    "title": "Get Started with Pinlens",
-    "description": "Experience this screen real-time preview and zoom measurement tool designed for macOS, making UI design, development debugging, and content creation more efficient.",
+    "title": "Make every detail check faster",
+    "description": "Download PinLens and handle previewing, zooming, measuring, and quick clicking in one lightweight window.",
     "download": "Download Now"
   }
 }
