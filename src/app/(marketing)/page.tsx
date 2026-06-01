@@ -89,7 +89,9 @@ const HomePage = () => {
                 <AnimationContainer delay={0.2}>
                     <BentoGrid className="py-8">
                         {CARDS(t).map((feature, idx) => (
-                            <BentoCard key={idx} {...feature} />
+                            <AnimationContainer delay={0.12 + idx * 0.08} key={idx} className="h-full">
+                                <BentoCard {...feature} />
+                            </AnimationContainer>
                         ))}
                     </BentoGrid>
                 </AnimationContainer>
