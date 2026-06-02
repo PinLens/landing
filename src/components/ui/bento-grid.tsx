@@ -1,6 +1,7 @@
 "use client";
 
 import { buttonVariants } from "@/components/ui/button";
+import MagicCard from "@/components/ui/magic-card";
 import { cn } from "@/utils";
 import {
     ArrowRightIcon,
@@ -101,18 +102,16 @@ const BentoCard = ({
     cta: string;
     tags: string[];
 }) => (
-    <article
+    <MagicCard
         className={cn(
-            "group relative flex h-full min-h-[260px] flex-col justify-between overflow-hidden rounded-lg border border-border/70 bg-background p-6",
-            "transition-colors duration-200 hover:border-primary/40 hover:bg-muted/10",
+            "group flex h-full min-h-[260px] max-w-none flex-col justify-between bg-gradient-to-r from-background to-background/40 p-6 md:p-6",
             className,
         )}
     >
         <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:36px_36px] opacity-40" />
-        <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent opacity-0 transition-opacity duration-200 group-hover:opacity-100" />
 
         <div className="relative">
-            <div className="flex size-11 items-center justify-center rounded-md border border-border/70 bg-muted/20 text-primary">
+            <div className="flex size-11 items-center justify-center rounded-md bg-muted/20 text-primary">
                 <Icon className="h-5 w-5" />
             </div>
             <h3 className="mt-6 text-xl font-medium text-foreground">
@@ -128,7 +127,7 @@ const BentoCard = ({
                 {tags.map((tag) => (
                     <span
                         key={tag}
-                        className="rounded-md border border-border/70 bg-muted/20 px-2.5 py-1 text-xs text-muted-foreground"
+                        className="rounded-md bg-muted/20 px-2.5 py-1 text-xs text-muted-foreground"
                     >
                         {tag}
                     </span>
@@ -139,7 +138,7 @@ const BentoCard = ({
                 <ArrowRightIcon className="ml-2 h-4 w-4" />
             </Link>
         </div>
-    </article>
+    </MagicCard>
 );
 
 export { BentoCard, BentoGrid };
